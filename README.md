@@ -10,6 +10,14 @@
 
 YI框架地址：[点击跳转](https://gitee.com/ccnetcore/Yi)
 
+意社区股市在线体验地址：
+[https://ccnetcore.com/stock](https://ccnetcore.com/stock)
+
+
+界面：
+
+<img src="readme/index.png"/>
+
 ## ✨ 特点
 
 - 🤖 **完全AI驱动**：股票价格走势、市场新闻全部由AI动态生成
