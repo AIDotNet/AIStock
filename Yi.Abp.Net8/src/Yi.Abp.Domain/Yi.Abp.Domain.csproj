@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<Import Project="..\..\common.props" />
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.Ddd.Domain" Version="$(AbpVersion)" />
+	  <PackageReference Include="Volo.Abp.Caching" Version="$(AbpVersion)" />
+	  
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\framework\Yi.Framework.Mapster\Yi.Framework.Mapster.csproj" />
+    <ProjectReference Include="..\..\framework\Yi.Framework.SqlSugarCore.Abstractions\Yi.Framework.SqlSugarCore.Abstractions.csproj" />
+    <ProjectReference Include="..\..\module\audit-logging\Yi.Framework.AuditLogging.Domain\Yi.Framework.AuditLogging.Domain.csproj" />
+    <ProjectReference Include="..\..\module\rbac\Yi.Framework.Rbac.Domain\Yi.Framework.Rbac.Domain.csproj" />
+    <ProjectReference Include="..\..\module\setting-management\Yi.Framework.SettingManagement.Domain\Yi.Framework.SettingManagement.Domain.csproj" />
+    <ProjectReference Include="..\..\module\tenant-management\Yi.Framework.TenantManagement.Domain\Yi.Framework.TenantManagement.Domain.csproj" />
+    <ProjectReference Include="..\Yi.Abp.Domain.Shared\Yi.Abp.Domain.Shared.csproj" />
+  </ItemGroup>
+
+
+	<ItemGroup>
+	  <Folder Include="EventHandlers\" />
+    <Folder Include="Entities\" />
+    <Folder Include="Managers\" />
+    <Folder Include="Repositories\" />
+  </ItemGroup>
+
+</Project>

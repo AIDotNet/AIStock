@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<Import Project="..\..\common.props" />
+
+
+  <ItemGroup>
+<!--    <PackageReference Include="SqlSugarCoreNoDrive" Version="$(SqlSugarVersion)" />-->
+    
+    <PackageReference Include="SqlSugarCore" Version="$(SqlSugarVersion)" />
+    
+    <PackageReference Include="Volo.Abp.Ddd.Domain" Version="$(AbpVersion)" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Yi.Framework.Core\Yi.Framework.Core.csproj" />
+  </ItemGroup>
+
+</Project>
